@@ -1,0 +1,22 @@
+logging:
+  level:
+    com.nea.patient.access.portal.ui: INFO
+    org.springframework: INFO
+    org.apache.http: INFO
+  file:
+    path: logs
+    name: logs/patient-portal-client.log
+
+spring:
+  application:
+    name: patient-portal-client
+
+patient:
+  portal:
+    access:
+      api:
+        host: http://localhost:8081/api
+        connect:
+          timeout: 5000
+        read:
+          timeout : 10000
